@@ -12,6 +12,7 @@ import java.util.stream.LongStream;
 /**
  * Implements the pricing service to get prices for each vehicle.
  */
+@Deprecated
 public class PricingService {
 
     /**
