@@ -98,16 +98,21 @@ public class CarControllerTest {
      * @throws Exception when car creation fails in the system
      */
     @Test
-    public void changeCar() throws Exception {
+    public void updateCar() throws Exception {
         Car car = getCar();
+        Details details = car.getDetails();
+        details.setExternalColor("yellow");
         car.setCondition(Condition.NEW);
+        car.setDetails(details);
+
         mvc.perform(
             put(new URI("/cars/1"))
                 .content(json.write(car).getJson())
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaTypes.HAL_JSON))
             .andExpect(status().isOk())
-            .andExpect(jsonPath("$.condition").value(car.getCondition().toString()));
+            .andExpect(jsonPath("$.condition").value(car.getCondition().toString()))
+            .andExpect(jsonPath("$.details.externalColor").value(details.getExternalColor()));
     }
 
     /**
