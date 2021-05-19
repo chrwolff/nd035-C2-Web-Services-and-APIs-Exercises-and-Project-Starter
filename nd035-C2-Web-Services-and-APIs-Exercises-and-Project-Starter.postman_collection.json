@@ -1,0 +1,169 @@
+{
+  "info": {
+    "_postman_id": "01cc39c5-e043-46e5-9aa3-1f3504fd4121",
+    "name": "nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "localhost:8082/services/price",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8082/services/price",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "services",
+            "price"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8082/services/price",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"vehicleId\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8082/services/price",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "services",
+            "price"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/cars/1",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/cars/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "cars",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/cars/1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/cars/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "cars",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/cars/1",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 1,\r\n    \"createdAt\": \"2021-05-17T15:38:32.422358\",\r\n    \"modifiedAt\": \"2021-05-17T15:38:32.422358\",\r\n    \"condition\": \"USED\",\r\n    \"details\": {\r\n        \"body\": \"2\",\r\n        \"model\": \"2\",\r\n        \"manufacturer\": {\r\n            \"code\": 100,\r\n            \"name\": \"Audi\"\r\n        },\r\n        \"numberOfDoors\": null,\r\n        \"fuelType\": null,\r\n        \"engine\": null,\r\n        \"mileage\": null,\r\n        \"modelYear\": null,\r\n        \"productionYear\": null,\r\n        \"externalColor\": null\r\n    },\r\n    \"location\": {\r\n        \"lat\": 0.0,\r\n        \"lon\": 0.0,\r\n        \"address\": \"6495 Atlanta Hwy\",\r\n        \"city\": \"Montgomery\",\r\n        \"state\": \"AL\",\r\n        \"zip\": \"36117\"\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/cars/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "cars",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/cars/",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"condition\": \"NEW\",\r\n    \"details\": {\r\n        \"body\": 1,\r\n        \"model\": 1,\r\n        \"manufacturer\": {\r\n            \"code\": 100\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/cars/",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "cars",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/cars/",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/cars/",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "cars",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
